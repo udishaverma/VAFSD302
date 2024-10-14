@@ -1,20 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS HTML</title>
     <style>
-        body{
-            /* background-color: antiquewhite; */
-            background-image: url('./images/bkg.jpeg');
-            /* background-position: top right; */
-            background-size: cover  ;
-            background-color: rgb(249, 238, 222);
+        body {
+            /* background-image: url('./images/bkg.jpeg');
+            background-position: top right; 
+            background-repeat: repeat-x;
+            background-size: cover; 
+            background-color: rgb(249, 238, 222); */
+
+            /* background: url('./images/bkg.jpeg') no-repeat top right rgb(239, 213, 204); */
+            /* background-image: linear-gradient(rgb(51, 59, 83),rgb(159, 125, 159)); */
+            background-image: radial-gradient(rgb(183, 119, 119) 10%, rgb(124, 124, 15) 20%, rgb(10, 51, 36) 35%, white);
+
+        }
+
+        h1 {
+            text-align: left;
+            text-decoration: line-through;
+            text-transform: uppercase;
+            /* text-indent: ; */
+        }
+
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            font-weight: 400;
+            font-style: italic;
+            color: rgb(5, 51, 36);
+            text-align: justify;
+            /* text-wrap: nowrap; */
+            font-variant: small-caps;
+        }
+
+        img {
+            float: left;
+            border: 2px solid #999;
+            margin-bottom: 20px;
+            margin-right: 20px;
+        }
+
+        div {
+            box-sizing: border-box;
+            width: 900px;
+            height: auto;
+            background-color: antiquewhite;
+            margin: 0px auto;
+            padding: 5px;
+            border-right: 2px solid #999;
+            border-width: 2px solid #999;
+            box-shadow: 0px 0px 18px rgb(184, 123, 210);
         }
     </style>
 </head>
+
 <body>
-    
+    <div>
+        <h1>hello</h1>
+
+
+        <img src="./images/html.png" alt="html logo">
+
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit dolores id repudiandae aperiam quam labore!
+            Voluptas, excepturi ut quam laborum animi minus recusandae debitis, enim aperiam explicabo fugit, ad nulla
+            architecto obcaecati. Sit, mollitia. Et animi fugit asperiores impedit. Maxime aspernatur ipsa praesentium
+            provident necessitatibus nam rem iste incidunt perferendis, saepe et a ipsam, exercitationem aliquid eius
+            autem
+            quo ipsum id. Perferendis, magni laborum eius consequuntur natus incidunt dolorem! Quo ea corrupti optio a
+            cum,
+            impedit atque soluta quos iste quam odio ab reiciendis, aperiam officiis ratione facere modi id inventore
+            natus
+            veniam doloribus suscipit nam? Debitis doloremque facere. Lorem, ipsum dolor sit amet consectetur
+            adipisicing elit. Eaque adipisci voluptates, repellendus, dolorem inventore nesciunt quasi facere eligendi
+            maiores eos laborum labore architecto amet nobis vero. Quasi quis nemo aperiam dolorem facere? Voluptas,
+            architecto cumque maxime corrupti nostrum molestias similique? Corrupti harum eos ipsam architecto
+            laudantium pariatur ullam minima cumque.
+        </p>
+
+    </div>
 </body>
+
 </html>
