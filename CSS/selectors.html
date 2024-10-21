@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        /* universal selector "*" */
+        /* *{color:red;} */
+        /* simple selectors element class,id */
+        body {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        /* div {background-color: bisque;} */
+        /* p{color: rgb(94, 60, 153);} */
+        /* #txt{font-size: larger;} */
+        /* .para{color: blue;} */
+        /* div p {color: aqua;} */
+        div>p { color: aquamarine;}/*only applies to direct child*/
+        div+p{color: ;}/*adjacent sibling selector*/
+        div~p{color: brown;} /*general sibling selector*/
+    </style>
+</head>
+
+<body>
+    <div>
+        <h2>Direct child</h2>
+        <p id="txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum non excepturi consectetur, ipsum libero
+            temporibus magni magnam totam obcaecati impedit, dolore assumenda illum voluptatibus ut dolores commodi
+            culpa corrupti et!</p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae voluptate voluptates temporibus unde quam
+            eveniet, debitis praesentium placeat facere quia magnam deleniti asperiores, laboriosam sapiente laborum
+            molestiae dolorum voluptatem at!
+        </p>
+        <main>
+            <h2>Indirect child</h2>
+            <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit numquam reprehenderit ut
+                repellendus
+                molestias
+                vero illo! Magni asperiores itaque aliquam sit quisquam. Voluptas culpa architecto laboriosam eligendi?
+                Pariatur expedita cupiditate at repellendus, tenetur voluptas optio consequuntur doloribus quos quidem
+                amet!
+            </p>
+        </main>
+    </div>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum architecto dolor vel labore id quidem temporibus
+        soluta distinctio deleniti, fugiat porro amet iure aut inventore?
+    </p>
+</body>
+
+</html>
