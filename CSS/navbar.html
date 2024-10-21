@@ -1,24 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navbar | CSS</title>
 
     <style>
-        body{
-            margin:0px; padding: 0px; 
+        body {
+            margin: 0px;
+            padding: 0px;
             box-sizing: border-box;
         }
-        ul{list-style:none; display:flex;}
-        ul li{margin: 0 10px;}/*descendent selector*/
-        ul li a{text-decoration: none;
-        color: rgb(45, 226, 99);}
-        ul li a:hover{color:red;
-        cursor: pointer;}
-        ul li a:active{color: blue;}
+
+        ul {
+            list-style: none;
+            display: flex;
+        }
+
+        ul li {/*descendent selector*/
+            margin: 0 10px;
+            border-right: 1 px solid #0f0101;
+            padding-right: 1px;
+
+        }
+
+        ul li:nth-child(5){border-right: 0; padding-right: 0;}
+
+        ul li a {
+            text-decoration: none;
+            color: rgb(45, 226, 99);
+            padding: 5px 10px;
+            border-radius:10px;
+            box-shadow: 1px 2px 2px #0f0101;
+        }
+
+        ul li a:hover {
+            color: red;
+            cursor: pointer;
+            background-color: blueviolet;
+        }
+
+        ul li a:active {
+            color: blue;
+        }
     </style>
 </head>
+
 <body>
     <ul>
         <li><a href="">Home</a></li>
@@ -28,4 +56,5 @@
         <li><a href="">Contact</a></li>
     </ul>
 </body>
+
 </html>

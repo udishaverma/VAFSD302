@@ -20,14 +20,30 @@
         /* #txt{font-size: larger;} */
         /* .para{color: blue;} */
         /* div p {color: aqua;} */
-        div>p { color: aquamarine;}/*only applies to direct child*/
-        div+p{color: ;}/*adjacent sibling selector*/
+        /* div>p { color: aquamarine;}only applies to direct child */
+        /* div+p{color: ;}adjacent sibling selector */
         div~p{color: brown;} /*general sibling selector*/
+
+        /*Pseudo class selectors*/
+        a:hover{color: red;}
+        a:visited {color: aquamarine;}
+        a:active{color: bisque;}
+
+        /*Pseudo elements selectors*/
+
+        /* div{opacity: 0.6;} */
+        p::first-letter{color: red; font-size:larger;}
+        p::after{content: 'Add more'; color: blue;}
+        p::first-line{text-decoration: underline;}
+
     </style>
 </head>
 
 <body>
     <div>
+        <a href="">click here</a>
+        <a href="">click</a>
+        
         <h2>Direct child</h2>
         <p id="txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum non excepturi consectetur, ipsum libero
             temporibus magni magnam totam obcaecati impedit, dolore assumenda illum voluptatibus ut dolores commodi
