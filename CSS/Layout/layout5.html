@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        main {
+            width: 900px;
+            height: 100%;
+            margin: 0 auto;
+        }
+
+        #logo {
+            width: 900px;
+            height: 100px;
+            background-color: #8d9df9;
+        }
+
+        #complex {
+            width: 900px;
+            height: 460px;
+            /* background-color: #999; */
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
+            margin: 5px;
+        }
+
+        #side {
+            width: 400px;
+            height: 460px;
+            margin: 5px;
+            background-color: #fbe6ad;
+            /* display: flex; */
+            /* flex-direction: row; */
+            /* gap: 5px; */
+        }
+
+        #right {
+            width: 500px;
+            height: 460px;
+            background-color: #ade6f3;
+            display: block;
+            
+        }
+
+        header {
+            width: 500px;
+            height: 100px;
+            background-color: #afedbe;
+            margin: 5px;
+        }
+
+
+        #bodyarea {
+            width: 500px;
+            height: 360px;
+            background-color: #e8edb0;
+            margin: 5px;
+
+        }
+
+        footer {
+            width: 900px;
+            height: 100px;
+            background-color: #deb4e8;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div id="logo">
+            <h2>Logo</h2>
+        </div>
+        <div id="complex">
+            <div id="side">
+                <h2>Side Bar</h2>
+            </div>
+            <div id="right">
+                <header>
+                    <h2>Header/Banner</h2>
+                </header>
+                <div id="bodyarea">
+                    <h2>Body Area</h2>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <h2>Footer</h2>
+        </footer>
+
+
+    </main>
+</body>
+
+</html>
