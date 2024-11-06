@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout 3 - HTML</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        main {
+            width: 900px;
+            /* width: 100%; */
+            height: 1000px;
+            margin: 0 auto;
+            /* background-color: bisque; */
+        }
+
+
+        #logo {
+            width: 100%;
+            height: 100px;
+            background-color: #fbdada;
+            /* text-align: center; */
+        }
+
+        #container {
+            width: auto;
+            height: auto;
+            background-color: rgb(204, 249, 249);
+            margin: 5px 0;
+            display: flex;
+            gap: 5px;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .box{
+            width: 180px;
+            height: 100px;
+            background-color: #fee9cc;
+        }
+        
+        #boxes{
+            width: 100%;
+            height: 300px;
+            /* margin: 5px; */
+            background-color: #c1a7fa;
+            display: flex;
+            gap: 5px;
+        }
+
+        .box_section{
+            width: 400px;
+            height: 300px;
+            flex-grow: 1;
+            background-color: #d3c1fb;
+            text-align: center;
+            align-content: center;
+        }
+
+        footer{
+            width: 900px;
+            height: 100px;
+            background-color: #d4ffe5;
+            margin-top: 3px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body>
+    <main>
+        <div id="logo">
+            <h2>Logo</h2>
+        </div>
+        <div id="container">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+
+        <div id="boxes">
+            <div class="box_section"><h2>Box 1</h2></div>
+            <div class="box_section"><h2>Box 2</h2></div>
+            <div class="box_section"><h2>Box 3</h2></div>
+        </div>
+
+        <footer>
+            <h2>Footer</h2>
+        </footer>
+
+    </main>
+</body>
+
+</html>
