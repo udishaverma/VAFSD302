@@ -1,73 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        main{
-            width: 1200px;
+
+        main {
+            width: 900px;
             height: auto;
-            background-color: #fcbcbc;
+            /* background-color: #fcbcbc; */
             display: grid;
-            grid-template-rows: 120px 780px 80px;
-            align-content: center;
+            grid-template-rows: 100px 780px 100px;
+            text-align: center;
+            /* align-content: center; */
+            justify-self: center;
         }
-        #logo,footer{
+
+        #logo,
+        footer {
             margin-top: 5px;
             background-color: #999;
         }
-        #logo{
+
+        #logo {
             margin-top: 0;
         }
-        #box{
+
+        #box {
             display: grid;
-            grid-template-columns: 1fr 2fr;
-            /* grid-template-rows: 690px; */
+            grid-template-columns: 200px 695px;
+            grid-template-rows: 775px;
             gap: 5px;
             margin-top: 5px;
         }
-        #side{
-            background-color: antiquewhite;
+
+        #side {
+            background-color: #999;
             text-align: center;
-            align-content: center;
         }
-        #right{
+
+        #right {
             display: grid;
-            grid-template-rows: 1fr 2fr;
+            grid-template-rows: 100px 665px;
             grid-template-columns: 1fr;
-            background-color: azure;
             gap: 5px;
+            background-color: #999;
+
         }
-        header,article{
-            background-color: aquamarine;
-            text-align: center;
-            align-content: center;
-        }
-        footer{
-            margin-top: 5px;
+
+        header,
+        article {
+            background-color: #999;
+            /* margin: 2px; */
+            /* text-align: center; */
+            /* align-content: center; */
         }
     </style>
 
 </head>
+
+
+
 <body>
-    <main align="center">
-        <div id="logo"><h2>Logo</h2></div>
+    <main>
+        <div id="logo">
+            <h2>Logo</h2>
+        </div>
 
         <div id="box">
-            <div id="side"><h2>Side Bar</h2></div>
-        
+            <div id="side">
+                <h2>Side Bar</h2>
+            </div>
+
             <div id="right">
-                <header><h2>Header</h2></header>
-                <article><h2>Body area</h2></article>
+                <header>
+                    <h2>Header</h2>
+                </header>
+                <article>
+                    <h2>Body area</h2>
+                </article>
             </div>
         </div>
-        <footer><h2>Footer</h2></footer>
+        <footer>
+            <h2>Footer</h2>
+        </footer>
     </main>
 </body>
+
 </html>
