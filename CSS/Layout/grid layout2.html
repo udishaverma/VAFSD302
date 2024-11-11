@@ -15,14 +15,12 @@
             height: auto;
             background-color: #fcbcbc;
             display: grid;
-            grid-template-rows: 100px 460px 100px;
-            text-align: center;
+            grid-template-rows: 120px 780px 80px;
             align-content: center;
         }
         #logo,footer{
-            margin-top: 5px 0;
+            margin-top: 5px;
             background-color: #999;
-            /* align-content: center; */
         }
         #logo{
             margin-top: 0;
@@ -36,10 +34,12 @@
         }
         #side{
             background-color: antiquewhite;
+            text-align: center;
+            align-content: center;
         }
         #right{
             display: grid;
-            grid-template-rows: 100px 360px;
+            grid-template-rows: 1fr 2fr;
             grid-template-columns: 1fr;
             background-color: azure;
             gap: 5px;
@@ -56,7 +56,7 @@
 
 </head>
 <body>
-    <main>
+    <main align="center">
         <div id="logo"><h2>Logo</h2></div>
 
         <div id="box">
