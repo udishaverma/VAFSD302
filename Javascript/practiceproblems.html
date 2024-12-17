@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Write  a program to display name of the day as per the given input
+
+        let num=prompt("Enter a number between 1 to 7: ");
+        let day={1:"Monday",2:"Tuesday",3:"Wednesday",4:"Thursday",5:"Friday",6:"Saturday",7:"Sunday"};
+        for (i=1;i<day.length;i++){
+            if(num==day.keys(i)){
+                document.write(`${day[i]}`);
+            }
+            else{
+                document.write("Invalid choice");
+            }
+        }
+    </script>
+</body>
+</html>

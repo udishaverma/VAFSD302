@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable declaration</title>
+</head>
+
+<body>
+    <!-- <script>
+        var name="Udisha";
+        // document.write("Hello")
+        document.write(name);
+        console.log(name);
+    </script> -->
+    <!-- <script>
+        let name="udisha";
+        let name="xyz";
+        console.log(name);
+    </script> -->
+    <p>
+        syntax- var var_name=var_value; <br>
+        const number=456; <br>
+        let last_name="soni";
+    </p>
+    <p>
+        Hoisting phase <br>
+        let and const do not participate in hoisting phase as because they can't be redeclared.
+    </p>
+
+
+    <script>
+        var name = "udisha";
+        console.log(name);
+
+        name = "Abhishek";
+        console.log(name);
+
+
+        // var supports both re-declaration and re-asssignment
+    </script>
+
+
+    <script>
+        let num = 10;
+        // console.log(num);
+
+        num=20;
+        console.log(num);
+
+
+        // let supports re-assignment but not re-declaration
+    </script>
+
+    <script>
+        const x=5;
+        console.log(x);
+        x=8;
+        console.log(x);   //Uncaught type error
+
+        // const supports neither re-declaration nor re-assignment
+    </script>
+</body>
+
+</html>

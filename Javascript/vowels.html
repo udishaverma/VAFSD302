@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vowels</title>
+</head>
+<body>
+    <script>
+        //Write a program to count vowels in a given string
+        let string=prompt("Enter string: ");
+        let count=0;
+        for (x in string){
+            if (x=='a' || x=='e' || x=='i' || x=='o' || x=='u'){
+                count+=1;
+            }
+            document.write(`${string[x]}`);
+        }
+        document.write(count);
+    </script>
+</body>
+</html>
